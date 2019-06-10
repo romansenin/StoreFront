@@ -9,10 +9,23 @@ let connection = mysql.createConnection({
   database: "bamazon"
 });
 
-let args = process.argv;
-
 connection.connect(function(err) {
   if (err) throw err;
   console.log("connected as id " + connection.threadId + "\n");
 });
 
+connection.query("SELECT * FROM products ORDER BY department_name", function(err, rows) {
+  if (err) throw err;
+  // console.log(rows);
+  displayResults(rows);
+});
+
+function displayResults(results) {
+  for(let i = 0; i < results.length; i++) {
+    console.log("-".repeat(10));
+    for (field in results[i]) {
+      console.log(field + ": " + results[i][field]);
+    }
+  }
+  console.log("-".repeat(10));
+}
