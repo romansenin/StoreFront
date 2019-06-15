@@ -26,7 +26,7 @@ To set up and use the app:
       npm install
       npm start
       ```
-The following demonstrates some of the functionality:
+The following gif demonstrates some of the functionality:
 
 ![Gif on how to use](./gifs/app-use.gif)
 
