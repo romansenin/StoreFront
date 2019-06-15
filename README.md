@@ -26,6 +26,10 @@ To set up and use the app:
       npm install
       npm start
       ```
+The following demonstrates some of the functionality:
+
+![Gif on how to use](./gifs/app-use.gif)
+
 ---
 ### Technologies Used:
 * inquirer.js
