@@ -26,6 +26,7 @@ To set up and use the app:
       npm install
       npm start
       ```
+  1. Visit http://localhost:3000 in your browser
 The following gif demonstrates some of the functionality:
 
 ![Gif on how to use](./gifs/app-use.gif)
